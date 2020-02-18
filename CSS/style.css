@@ -1,0 +1,1581 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat',
+        'Inria Serif', serif;
+    line-height: 180%;
+    font-size: 16px;
+}
+
+/* CSS Variables */
+:root {
+    --dark-blue-color: #1C5475;
+    --med-blue-color: #C1D7EF;
+    --turq-color: #0096B1;
+    --grey-panel-color: #F0F0F0;
+    --footer-bottom-color: #15415A;
+}
+
+p {
+    font-size: 16px;
+    color: #666666;
+    font-family: 'Montserrat';
+}
+
+hr {
+    border-top: 1px dotted var(--turq-color);
+    margin: 50px 0 50px 0;
+}
+
+/* HR TAG 2 */
+.line-2 {
+    border-top: 1px dotted #666666;
+    margin: 30px 0;
+}
+
+.heading-lead {
+    color: var(--dark-blue-color);
+    font-family: Inria Serif;
+    font-size: 26px;
+    padding-top: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* BUTTONS */
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 40px 0;
+}
+
+/* clear */
+.button-clear {
+    display: inline-block;
+    padding: 5px 30px;
+    border: 0.1em solid #FFFFFF;
+    margin: 80px 0;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button-clear:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* BUTTON BURNT ORANGE */
+.button-orange {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.1em solid var(--turq-color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    text-decoration: none;
+    background-color: var(--turq-color);
+    width: 140px;
+}
+
+.button-orange:hover {
+    color: #000000;
+    background-color: var(--turq-color);
+    background-color: #FFFFFF;
+}
+
+/* top header */
+.tp-head {
+    padding: 5px 0;
+    background-color: var(--dark-blue-color);
+}
+
+.ph-em {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ph-em p {
+    color: #ffff;
+    padding-left: 10px;
+}
+
+.ph-em img {
+    padding-left: 20px;
+}
+
+/* BRANDING */
+.branding {
+    margin: 50px 0 30px 0;
+}
+
+/* NAVIGATION */
+/* ACTIVE */
+a.active {
+    font-weight: 600;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #c1c1c123;
+    position: relative;
+    z-index: 999;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 16px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 30px 13px 30px;
+    text-decoration: none;
+    color: var(--dark-blue-color);
+}
+
+.nav>.nav-links>a:hover {
+    background-color: rgba(97, 97, 97, 0.3);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+/* SHOWCASE INDEX */
+.showcase-index {
+    margin: 0;
+    padding: 0;
+    background: url(../images/index-banner-main.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.showcase-index {
+    text-align: center;
+}
+
+.shwcse-text {
+    font-size: 50px;
+    font-family: Inria Serif;
+    padding-top: 160px;
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.296);
+}
+
+/* WHAT IS NTPHY */
+.wht-is-ntpthy {
+    background: url(../images/index-banner-naturopathy.jpg)no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.ntphy-explnd p {
+    font-weight: 600;
+}
+
+.wht-is-ntpthy {
+    padding: 100px 0;
+}
+
+.ntphy-explnd>div {
+    font-family: Inria Serif;
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.ntphy-explnd p {
+    color: #ffff;
+}
+
+/* WHY NATUROPATHY */
+.why-ntpathy p {
+    padding-bottom: 80px;
+}
+
+/* KEA */
+.kea-banner {
+    background: rgba(193, 215, 239, 0.3);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.kea-box {
+    display: inline-block;
+    font-family: Inria Serif;
+    font-size: 26px;
+    color: #ffff;
+    margin: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 30px 0;
+    width: 500px;
+    background-color: var(--turq-color);
+}
+
+.contact-kea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    font-size: 26px;
+}
+
+.contact-kea img {
+    padding: 0 10px;
+}
+
+/* SERVICES PANELS */
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8 {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.box-1 img,
+.box-2 img,
+.box-3 img,
+.box-4 img,
+.box-5 img,
+.box-6 img,
+.box-7 img,
+.box-8 img {
+    margin: 0 20px 0 40px;
+    height: 50px;
+}
+
+.serv-panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 90px;
+    grid-row-gap: 30px;
+    justify-items: center;
+}
+
+/* FORM */
+.form-wrap {
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-wrap {
+    align-items: flex-start;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font-family: 'Montserrat';
+}
+
+#contact {
+    background: var(--grey-panel-color);
+    padding: 25px;
+    margin: 0;
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--burnt-red-color);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: rgb(216, 85, 55);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+.contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+.form-wrap {
+    align-self: start;
+}
+
+/* ABOUT US */
+/* ABOUT US SHOWCASE */
+.showcase-about {
+    margin: 0;
+    padding: 0;
+    background: url('../images/aboutus-banner.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll;
+}
+
+/* SHOWCASE ABOUT TEXT */
+.showcase-about .heading-lead {
+    color: #ffff;
+    padding-top: 250px;
+}
+
+/* INTRO */
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 70px;
+}
+
+/* APPOINTMENT AND LOCATION */
+.appntment-location-wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 150px;
+}
+
+.location-box {
+    background-color: var(--turq-color);
+    padding: 30px;
+    color: #ffff;
+    border-radius: 5px;
+}
+
+.location-box p {
+    color: #ffff;
+}
+
+.location-box-header img {
+    height: 25px;
+}
+
+.location-box-header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* CONSULTATION */
+.consult {
+    margin-top: 50px;
+}
+
+/* CALL CHRIS */
+.call-chris {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.call-ph-number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.call-chris {
+    font-size: 20px;
+}
+
+.call-ph-number {
+    font-size: 26px;
+}
+
+.call-ph-number img {
+    margin-right: 10px;
+}
+
+/* NATURAL REMEDIES */
+/* N/R SHOWCASE */
+.showcase-natural-rem {
+    margin: 0;
+    padding: 0;
+    background: url('../images/Natural\ Remedies-banner.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll;
+}
+
+/* SHOWCASE TEXT */
+.showcase-natural-rem .heading-lead {
+    color: #ffff;
+    padding-top: 250px;
+}
+
+/* INTRO */
+.nat-rem-wrap {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.remedies-head {
+    color: var(--dark-blue-color);
+    font-family: Inria Serif;
+    font-size: 26px;
+    padding-bottom: 40px;
+}
+
+.list {
+    font-size: 18px;
+}
+
+.head-icon-list {
+    display: flex;
+    align-items: center;
+}
+
+.list img {
+    padding-right: 20px;
+}
+
+/* FURTHER INFO */
+.further-info-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+.info-lead img {
+    margin-top: 20px;
+}
+
+/* SERVICES */
+/* SHOWCASE */
+.showcase-services {
+    margin: 0;
+    padding: 0;
+    background: url('../images/Services-banner.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll;
+}
+
+/* SHOWCASE TEXT */
+.showcase-services .heading-lead {
+    color: #ffff;
+    padding-top: 250px;
+}
+
+.services-wrap {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 70px;
+}
+
+.modal-image {
+    display: flex;
+    align-self: end;
+    justify-content: flex-end;
+}
+
+.services-wrap img {
+    height: 120px;
+}
+
+.modal-wrap,
+.modal-wrap-frequency,
+.modal-wrap-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    margin: 20px 0;
+}
+
+.modal-wrap p {
+    padding-bottom: 10px;
+}
+
+.services-head {
+    color: var(--dark-blue-color);
+    font-family: Inria Serif;
+    font-size: 26px;
+    padding: 40px 0;
+}
+
+/* CONTACT US */
+/* SHOWCASE */
+.showcase-contact {
+    margin: 0;
+    padding: 0;
+    background: url(../images/contact-us-banner.png) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: scroll;
+}
+
+.contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 140px;
+}
+
+.form-wrap {
+    align-self: start;
+    order: 2;
+}
+
+.contct-details {
+    order: 1;
+}
+
+/* MAPS RESPONSIVE */
+.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* SHOWCASE TEXT */
+.showcase-contact .heading-lead {
+    color: #ffff;
+    padding-top: 250px;
+}
+
+.contact-wrap {
+    margin-top: 120px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-blue-color);
+}
+
+.foot-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.foot-wrap ul li {
+    font-size: 13px;
+    text-decoration: none;
+    text-align: right;
+    list-style: none;
+    color: #ffff;
+}
+
+.btm-foot {
+    background-color: var(--footer-bottom-color);
+    color: #ffff;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media all and (max-width: 480px) {
+
+    /* GLOBAL */
+    hr {
+        margin: 30px 0;
+    }
+
+    .heading-lead {
+        font-size: 24px;
+        padding-top: 50px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* NAV */
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: var(--grey-panel-color);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid var(--dark-blue-color);
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: var(--grey-panel-color);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    /* top header */
+    .tp-head {
+        display: none;
+    }
+
+    /* BRANDING */
+    .logo-branding {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* clear */
+    .button-clear {
+        margin: 30px 0;
+    }
+
+    /* SHOWCASE INDEX */
+    .showcase-index {
+        height: 40vh;
+        background-attachment: scroll;
+    }
+
+    .logo-branding img {
+        height: 40px;
+    }
+
+    .shwcse-text {
+        font-size: 30px;
+        padding-top: 40px;
+        line-height: 40px;
+    }
+
+    /* WHAT IS NTPHY */
+    .ntphy-explnd p {
+        font-weight: 400;
+    }
+
+    .wht-is-ntpthy {
+        padding: 40px 0;
+    }
+
+    .ntphy-explnd>div {
+        font-size: 24px;
+    }
+
+    /* WHY NATUROPATHY */
+    .why-ntpathy p {
+        padding-bottom: 40px;
+    }
+
+    /* KEA */
+    .kea-banner {
+        padding: 40px 0;
+    }
+
+    .kea-banner p {
+        text-align: left;
+    }
+
+    .kea-box {
+        display: inline-block;
+        justify-content: center;
+        font-size: 24px;
+        padding: 20px 10px;
+        width: auto;
+        margin: 0 0 30px 0;
+    }
+
+    .contact-kea {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 0 0;
+        font-size: 24px;
+    }
+
+    .contact-kea img {
+        display: none;
+    }
+
+    /* SERVICES PANELS */
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6,
+    .box-7,
+    .box-8 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .serv-panels {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .serv-panels img {
+        height: 30px;
+    }
+
+    .foot-wrap {
+        display: none;
+    }
+
+    /* ABOUT US */
+    /* ABOUT US SHOWCASE */
+    .showcase-about {
+        height: 30vh;
+    }
+
+    /* SHOWCASE ABOUT TEXT */
+    .showcase-about .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    /* INTRO */
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .intro img {
+        height: 130px;
+        margin-bottom: 10px;
+    }
+
+    /* APPOINTMENT AND LOCATION */
+    .appntment-location-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .location-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .location-box {
+        background-color: var(--turq-color);
+        padding: 30px;
+        color: #ffff;
+        border-radius: 5px;
+    }
+
+    .location-box-header img {
+
+        padding-right: 5px;
+    }
+
+    .location-box p {
+        color: #ffff;
+    }
+
+    .gisborne-pic img {
+        width: 100%;
+    }
+
+    .location-box-header {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    /* CONSULTATION */
+    .consult {
+        margin-top: 50px;
+    }
+
+    /* CALL CHRIS */
+    .call-chris {
+        text-align: center;
+    }
+
+    .call-ph-number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .call-chris {
+        font-size: 20px;
+    }
+
+    .call-ph-number {
+        font-size: 26px;
+    }
+
+    .call-ph-number img {
+        margin-right: 10px;
+    }
+
+    /* N/R SHOWCASE */
+    .showcase-natural-rem {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-natural-rem .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    /* INTRO */
+    .nat-rem-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .nat-rem-wrap img {
+        display: none;
+    }
+
+    .remedies-head {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .list img {
+        padding-right: 10px;
+        height: 30px;
+    }
+
+    /* FURTHER INFO */
+    .further-info-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .info-lead img {
+        display: none;
+    }
+
+    .contact-wrapper {
+        margin: 50px 0;
+    }
+
+    /* SERVICES */
+    /* SHOWCASE */
+    .showcase-services {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-services .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .services-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+    }
+
+    .modal-image {
+        display: flex;
+        align-self: end;
+        justify-content: flex-end;
+    }
+
+    .services-wrap img {
+        display: none;
+    }
+
+    .modal-wrap,
+    .modal-wrap-frequency,
+    .modal-wrap-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 25px;
+        margin: 10px 0;
+    }
+
+    .modal-wrap p {
+        padding-bottom: 10px;
+    }
+
+    .services-head {
+        font-size: 24px;
+        padding: 30px 0;
+    }
+
+    /* CONTACT US */
+    .contact-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrap {
+        margin: 40px 0
+    }
+
+    /* SHOWCASE */
+    .showcase-contact {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-contact .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .form-wrap {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    /* GLOBAL */
+    hr {
+        margin: 30px 0;
+    }
+
+    .heading-lead {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* NAV */
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: var(--grey-panel-color);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid var(--dark-blue-color);
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: var(--grey-panel-color);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    /* top header */
+    .tp-head {
+        display: none;
+    }
+
+    /* BRANDING */
+    .logo-branding {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* clear */
+    .button-clear {
+        margin: 35px 0;
+    }
+
+    /* SHOWCASE INDEX */
+    .showcase-index {
+        height: 50vh;
+        background-attachment: scroll;
+    }
+
+    .logo-branding img {
+        height: 50px;
+    }
+
+    .shwcse-text {
+        font-size: 35px;
+        padding-top: 70px;
+    }
+
+    /* INTRO */
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+    .intro img {
+        height: 140px;
+    }
+
+    .wht-is-ntpthy {
+        padding: 50px 0;
+    }
+
+    /* KEA */
+    .kea-banner p {
+        text-align: left;
+    }
+
+    .kea-box {
+        display: inline-block;
+        justify-content: center;
+        font-size: 24px;
+        padding: 20px 0;
+        width: 400px;
+        margin: 0 0 30px 0;
+    }
+
+    .contact-kea {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px 0 0 0;
+        font-size: 24px;
+    }
+
+    /* SERVICES PANELS */
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6,
+    .box-7,
+    .box-8 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 350px;
+        align-items: center;
+    }
+
+    .serv-panels {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .serv-panels img {
+        height: 30px;
+    }
+
+    .foot-wrap {
+        display: none;
+    }
+
+    /* ABOUT US */
+    /* ABOUT US SHOWCASE */
+    .showcase-about {
+        height: 30vh;
+    }
+
+    /* SHOWCASE ABOUT TEXT */
+    .showcase-about .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    /* INTRO */
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    /* APPOINTMENT AND LOCATION */
+    .appntment-location-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .location-box {
+        width: 70%;
+        margin: 20px 0;
+        border-radius: 5px;
+        justify-content: space-around;
+        background-color: var(--turq-color);
+        padding: 30px;
+        color: #ffff;
+    }
+
+    .location-box p {
+        color: #ffff;
+    }
+
+    .gisborne-pic img {
+        width: 100%;
+    }
+
+    .location-box-header {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    /* CONSULTATION */
+    .consult {
+        margin-top: 50px;
+    }
+
+    /* CALL CHRIS */
+    .call-chris {
+        text-align: center;
+    }
+
+    .call-ph-number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .call-chris {
+        font-size: 20px;
+    }
+
+    .call-ph-number {
+        font-size: 26px;
+    }
+
+    .call-ph-number img {
+        margin-right: 10px;
+    }
+
+    /* N/R SHOWCASE */
+    .showcase-natural-rem {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-natural-rem .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    /* INTRO */
+    .nat-rem-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .nat-rem-wrap img {
+        display: none;
+    }
+
+    .remedies-head {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .list img {
+        padding-right: 10px;
+        height: 30px;
+    }
+
+    /* FURTHER INFO */
+    .further-info-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .info-lead img {
+        display: none;
+    }
+
+    .contact-wrapper {
+        margin: 50px 0;
+    }
+
+    /* SERVICES */
+    /* SHOWCASE */
+    .showcase-services {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-services .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .services-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+    }
+
+    .modal-image {
+        display: flex;
+        align-self: end;
+        justify-content: flex-end;
+    }
+
+    .services-wrap img {
+        display: none;
+    }
+
+    .modal-wrap,
+    .modal-wrap-frequency,
+    .modal-wrap-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 25px;
+        margin: 10px 0;
+    }
+
+    .modal-wrap p {
+        padding-bottom: 10px;
+    }
+
+    .services-head {
+        font-size: 24px;
+        padding: 30px 0;
+    }
+
+    /* CONTACT US */
+    .contact-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrap {
+        margin: 40px 0
+    }
+
+    /* SHOWCASE */
+    .showcase-contact {
+        height: 30vh;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-contact .heading-lead {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .form-wrap {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .heading-lead {
+        color: var(--dark-blue-color);
+        font-family: Inria Serif;
+        font-size: 25px;
+        padding-top: 80px;
+    }
+
+    /* SHOWCASE INDEX */
+    .showcase-index {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+
+    .shwcse-text {
+        font-size: 40px;
+        padding-top: 90px;
+        line-height: 50px;
+    }
+
+    /* clear */
+    .button-clear {
+        margin: 50px 0;
+    }
+
+    /* WHAT IS NTPHY */
+    .wht-is-ntpthy {
+        padding: 70px 0;
+    }
+
+    .ntphy-explnd>div {
+        font-family: Inria Serif;
+        font-size: 26px;
+        color: #fff;
+        padding-bottom: 40px;
+    }
+
+    /* WHY NATUROPATHY */
+    .why-ntpathy p {
+        padding-bottom: 80px;
+    }
+
+    /* KEA */
+    .kea-banner {
+        background: rgba(193, 215, 239, 0.3);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .kea-box {
+        display: inline-block;
+        font-family: Inria Serif;
+        font-size: 25px;
+        color: var(--dark-blue-color);
+        margin: 20px;
+        color: #ffff;
+    }
+
+    /* SERVICES PANELS */
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6,
+    .box-7,
+    .box-8 {
+        width: 100%;
+    }
+
+    /* ABOUT US SHOWCASE */
+    .showcase-about {
+        height: 40vh;
+        background-attachment: scroll;
+    }
+
+    /* SHOWCASE ABOUT TEXT */
+    .showcase-about .heading-lead {
+        padding-top: 150px;
+    }
+
+    /* APPOINTMENT AND LOCATION */
+    .appntment-location-wrap {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .location-box {
+        padding: 30px;
+    }
+
+    /* NATURAL REMEDIES */
+    /* N/R SHOWCASE */
+    .showcase-natural-rem {
+        height: 40vh;
+        background-attachment: scroll;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-natural-rem .heading-lead {
+        padding-top: 150px;
+    }
+
+    /* SERVICES */
+    /* SHOWCASE */
+    .showcase-services {
+        height: 40vh;
+        background-attachment: scroll;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-services .heading-lead {
+        padding-top: 150px;
+    }
+
+    /* SHOWCASE */
+    .showcase-contact {
+        height: 40vh;
+    }
+
+    /* MAPS RESPONSIVE */
+    .map {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .map iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    /* SHOWCASE TEXT */
+    .showcase-contact .heading-lead {
+        padding-top: 150px;
+    }
+
+    .contact-wrap {
+        margin-top: 100px;
+    }
+
+    .contact-wrap {
+        grid-column-gap: 80px;
+    }
+}
